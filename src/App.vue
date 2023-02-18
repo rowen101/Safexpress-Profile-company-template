@@ -1,26 +1,36 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="max-w-5xl mx-auto py-8">
+  
+ <MenuBar/>
+  <!-- <router-link to="/">Home</router-link>
+    <router-link to="/about">About</router-link>
+    <router-link to="/contact">Contact</router-link> -->
+    <router-view></router-view>
+    <footer class="bg-gray-900 text-gray-400 py-4">
+  <div class="container mx-auto flex justify-between items-center">
+    <div>
+      <p class="font-semibold">Contact Us:</p>
+      <p>123 Main St</p>
+      <p>Anytown, USA 12345</p>
+      <p>Phone: (555) 555-5555</p>
+      <p>Email: info@example.com</p>
+    </div>
+    <div>
+      <p>&copy; Your Company Name. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import MenuBar from './components/MenuBar.vue';
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MenuBar
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+
