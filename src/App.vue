@@ -1,10 +1,10 @@
 <template>
-  <div class="max-w-5xl mx-auto py-8">
+  <div >
   
  <MenuBar/>
-  <!-- <router-link to="/">Home</router-link>
+  <router-link to="/">Home</router-link>
     <router-link to="/about">About</router-link>
-    <router-link to="/contact">Contact</router-link> -->
+    <router-link to="/contact">Contact</router-link>
     <router-view></router-view>
     <footer class="bg-gray-900 text-gray-400 py-4">
   <div class="container mx-auto flex justify-between items-center">
