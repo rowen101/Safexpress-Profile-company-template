@@ -4,6 +4,7 @@ import App from './App.vue';
 import HomePage from './views/HomePage.vue';
 import About from './views/AboutPage.vue';
 import Contact from './views/ContactPage.vue';
+import Faq from './views/FaqPage.vue';
 const router = createRouter({
   history: createWebHistory(),
   routes: [
@@ -17,6 +18,11 @@ const router = createRouter({
       path: '/about',
       name: 'about',
       component: About
+    },
+    {
+      path: '/faq',
+      name: 'faq',
+      component: Faq
     },
     {
       path: '/contact',
