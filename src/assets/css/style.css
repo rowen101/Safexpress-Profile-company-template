@@ -3,7 +3,9 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
 }
-
+.bg-custom {
+  background-color: #10486B /* replace #ff0000 with your desired color code */
+}
 a {
   color: #106eea;
   text-decoration: none;
@@ -847,7 +849,7 @@ section {
   width: 100%;
   position: relative;
   text-align: center;
-  background: #f1f6fe;
+  /* background: #f1f6fe; */
 }
 
 .counts .count-box i {

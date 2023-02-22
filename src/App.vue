@@ -4,26 +4,25 @@
  <MenuBar/>
 
     <router-view></router-view>
-    <FooterBar/>
+    <FooterCom/>
 </div>
 </template>
-
 <script>
 import MenuBar from './components/MenuBar.vue';
-//import FooterBar from './components/FooterCom.vue'
+import FooterCom from './components/FooterCom.vue'
 
 export default {
   name: 'App',
   components: {
     MenuBar,
-    //FooterBar
+    FooterCom,
+
   },
- 
 
 }
 </script>
 <style>
-  @import url('assets/css/style.css');
+
 
    /* Vendor CSS Files  */
    @import url('assets/vendor/aos/aos.css');
@@ -33,6 +32,7 @@ export default {
    @import url('assets/vendor/glightbox/css/glightbox.min.css');
    @import url('assets/vendor/swiper/swiper-bundle.min.css');
   
+   @import url('assets/css/style.css');
 </style>
 
 

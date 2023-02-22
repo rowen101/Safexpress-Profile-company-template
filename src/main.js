@@ -5,6 +5,7 @@ import HomePage from './views/HomePage.vue';
 import About from './views/AboutPage.vue';
 import Contact from './views/ContactPage.vue';
 import Faq from './views/FaqPage.vue';
+import Services from './views/ServicesPage.vue';
 const router = createRouter({
   history: createWebHistory(),
   routes: [
@@ -18,6 +19,11 @@ const router = createRouter({
       path: '/about',
       name: 'about',
       component: About
+    },
+    {
+      path: '/services',
+      name: 'services',
+      component: Services
     },
     {
       path: '/faq',
