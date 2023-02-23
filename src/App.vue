@@ -4,18 +4,18 @@
  <MenuBar/>
 
     <router-view></router-view>
-    <FooterCom/>
+    <DefaultFooter/>
 </div>
 </template>
 <script>
 import MenuBar from './components/MenuBar.vue';
-import FooterCom from './components/FooterCom.vue'
+import DefaultFooter from './components/DefaultFooter.vue'
 
 export default {
   name: 'App',
   components: {
     MenuBar,
-    FooterCom,
+    DefaultFooter,
 
   },
 

@@ -1,9 +1,6 @@
 <template><!-- ======= About Section ======= -->
   <section id="about" class="about section-bg">
     <div class="container" data-aos="fade-up">
-
-      
-
       <div class="row">
         <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
           <!-- <img src="assets/img/about.jpg" class="img-fluid" alt=""> -->
@@ -48,6 +45,14 @@ export default {
     return {
       about: require('@/assets/img/about.png')
     }
+  },
+  methods:{
+    forcePageReload() {
+          window.location.reload();
+        }
+  },
+  watch: function() {
+    this.forcePageReload();
   }
 }
 </script>

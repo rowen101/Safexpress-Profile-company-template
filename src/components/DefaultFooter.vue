@@ -9,13 +9,11 @@
     <div class="row">
 
       <div class="col-lg-3 col-md-6 footer-contact">
-        <h3>BizLand<span>.</span></h3>
+        <h3>SafeXpress<span>.</span></h3>
         <p>
-          A108 Adam Street <br>
-          New York, NY 535022<br>
-          United States <br><br>
-          <strong>Phone:</strong> +1 5589 55488 55<br>
-          <strong>Email:</strong> info@example.com<br>
+          
+          <strong>Phone:</strong> <br>
+          <strong>Email:</strong> <br>
         </p>
       </div>
 
@@ -32,18 +30,15 @@
 
       <div class="col-lg-3 col-md-6 footer-links">
         <h4>Our Services</h4>
-        <ul>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+        <ul v-for="(service, index) in services" :key="index">
+          <li><i class="bx bx-chevron-right"></i> <a :href="service.link">{{ service.ourservice}}</a></li>
+        
         </ul>
       </div>
 
       <div class="col-lg-3 col-md-6 footer-links">
         <h4>Our Social Networks</h4>
-        <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+        
         <div class="social-links mt-3">
           <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
           <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -65,3 +60,41 @@
 </div>
 </footer><!-- End Footer -->
 </template>
+
+<script>
+export default{
+    data(){
+      return{
+        services:[
+          {
+            ourservice: 'OUR MISSION',
+            link:'/our-mission'
+          },
+          {
+            ourservice: 'OUR VISION',
+            link:'/our-vission'
+          },
+          {
+            ourservice: 'CORPORATE VALUES',
+            link:'/corporatevalue'
+          },
+          {
+            ourservice: 'OUR TEAM',
+            link:'/team'
+          },
+          {
+            ourservice: 'OUR JOURNEY',
+            link:'/our-journey'
+          },
+          {
+            ourservice: 'CORPORATE STRATEGY',
+            link:'/corp-strategy'
+          }
+        ]
+      }
+    },
+    methods:{
+
+    }
+}
+</script>
