@@ -5,10 +5,10 @@
 
     <div class="section-title">
       <h3>Frequently Asked <span>Questions</span></h3>
-      <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+     
     </div>
 
-    <div class="row justify-content-center">
+    <!-- <div class="row justify-content-center">
       <div class="col-xl-10">
         <ul class="faq-list">
 
@@ -68,7 +68,7 @@
 
         </ul>
       </div>
-    </div>
+    </div> -->
 
   </div>
 </section><!-- End Frequently Asked Questions Section -->
