@@ -133,10 +133,6 @@
 
       </div>
     </section><!-- End Clients Section -->
-
-
-
-
     <!-- ======= Team Section ======= -->
     <section id="team" class="team section-bg">
       <div class="container" data-aos="fade-up">

@@ -6,6 +6,7 @@ import About from './views/AboutPage.vue';
 import Contact from './views/ContactPage.vue';
 import Faq from './views/FaqPage.vue';
 import Services from './views/ServicesPage.vue';
+
 const router = createRouter({
   history: createWebHistory(),
   routes: [
