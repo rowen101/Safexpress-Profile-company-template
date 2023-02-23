@@ -9,13 +9,15 @@
 
       <nav id="navbar" :class="navOpen">
         <ul>
-          <!-- <li><router-link class="nav-link scrollto" active-class="active" to="/">Home</router-link></li> -->
-          <li><a class="nav-link scrollto" href="/">Home</a></li>
-          <li><a class="nav-link scrollto" href="/about">About</a></li>
-          <li><a class="nav-link scrollto" href="/services">Service</a></li>
-          <li><a class="nav-link scrollto" href="/faq">FAQ</a></li>
-          <li><a class="nav-link scrollto" href="/contact">Contact</a></li>
 
+            <li v-for="(item, index) in menuItems" :key="index" :class="{'dropdown' : item.submenu}">
+              <a :href="item.url">{{ item.label }} <i :class="{'bi bi-chevron-down' :item.submenu}" @click="toggledropdown"></i></a>
+              <ul v-if="item.submenu" :class="dropactive">      
+                  <li v-for="(subitem,index) in item.submenu" :key="index">
+                    <a :href="subitem.url">{{ subitem.label }} </a>
+                  </li>
+              </ul>
+            </li>
         </ul>
         <i :class="iclass" @click="toggleNav()"></i>
       </nav>
@@ -34,26 +36,49 @@ export default {
   data() {
 
     const logo = require('@/assets/safexpress.png')
+    
+    const menuItems =[
+      { id:1, label: 'Home',url:'/'},
+      { id:1, label: 'About',url:'#',submenu:[
+        {id:4 , label:'Our Mission', url:'/'},
+        {id:5 , label:'Our Vission', url:'/'},
+        {id:6 , label:'Corporate Values', url:'/'},
+      ]},
+      { id:7, label: 'Services',url:'/services'},
+      { id:8, label: 'FAQ',url:'/faq'},
+      { id:9, label: 'Contact',url:'/contact'},
+    ]
     return {
+      menuItems,
       logo,
       navOpen: 'navbar',
+      dropactive: 'dropdown',
       iclass: 'bi bi-list mobile-nav-toggle'
     }
   },
   methods: {
     toggleNav() {
       if (this.navOpen == 'navbar') {
-        this.navOpen = 'navbar-mobile'
+        this.navOpen = 'navbar navbar-mobile'
         this.iclass = 'bi mobile-nav-toggle bi-x'
-        console.log(this.navOpen)
+      
       }
       else {
         this.navOpen = 'navbar'
         this.iclass = 'bi bi-list mobile-nav-toggle'
-        console.log(this.navOpen)
+      
       }
     },
-
+    toggledropdown(){
+      if(this.dropactive == "dropdown"){
+        this.dropactive = 'dropdown-active'
+        console.log(this.dropactive)
+      }
+      else if(this.dropactive == "dropdown-active"){
+        this.dropactive == "dropdown"
+        console.log(this.dropactive)
+      }
+    }
   }
 }
 

@@ -12,17 +12,7 @@
             Safexpress Logistics puts importance in being proactive
 with our clients and staff. Hence, we shall uphold A.C.T.s
           </p>
-          <div class="row">
-    <div class="col-4 border-right border-secondary">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget sagittis dolor. Donec semper lacinia vestibulum. Quisque commodo euismod leo sit amet varius.</p>
-    </div>
-    <div class="col-4 border-top border-right">
-     
-    </div>
-    <div class="col-4 border-left border-secondary">
-      <p>Nulla facilisi. Fusce feugiat semper luctus. Aenean ac mauris eu quam imperdiet consequat. In commodo tristique nisl vel dapibus. Sed vel justo et mauris commodo ultricies non non arcu.</p>
-    </div>
-  </div>
+
 
         </div>
       </div>

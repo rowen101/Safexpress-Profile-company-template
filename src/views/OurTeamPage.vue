@@ -13,7 +13,7 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100"
-            v-for="(employee, index) in employees" :key="index">
+            >
             <div class="member">
               <div class="member-img">
                 <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
@@ -25,7 +25,7 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>{{ employee.firstName }}</h4>
+                <h4></h4>
                 <span>Chief Executive Officer</span>
               </div>
             </div>

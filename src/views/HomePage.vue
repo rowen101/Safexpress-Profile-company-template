@@ -14,7 +14,7 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1>Welcome to <span>SafeXpress</span></h1>
+      <h1>Welcome to <span>SAFEXPRESS</span></h1>
       <h2>Logistics</h2>
       <div class="d-flex">
         <a href="/about" class="btn-get-started scrollto">Get Started</a>
@@ -78,7 +78,8 @@
 
           <div class="col-lg-3 col-md-6 mt-5 mt-lg-0" v-for="(boardofderictors, index) in boardofderictor" :key="index">
             <div class="count-box">
-              <img :src='boardofderictors.img' :alt="boardofderictors.firstName" />
+              <a :href="boardofderictors.img" class="glightbox">
+              <img :src='boardofderictors.img' :alt="boardofderictors.firstName" /></a>
               <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
                 class="purecounter"></span>
               <p>{{ boardofderictors.firstName + " " + boardofderictors.lastName }}</p>
@@ -97,7 +98,7 @@
 
         <div class="section-title">
 
-          <h3>Warehouse <span>MGMT.</span></h3>
+          <h3>Warehouse <span>Management.</span></h3>
 
         </div>
 
@@ -246,6 +247,7 @@ export default {
       this.visible = false
     }
   },
+  
   setup() {
     return {
       modules: [Autoplay, Pagination, Navigation],
